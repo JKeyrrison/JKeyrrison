@@ -112,7 +112,7 @@ flowchart LR
 | | |
 |---|---|
 | 🧠 **Inteligência Artificial** | 💬 **Engenharia de Prompt** |
-| 🗄️ **Bancos de Dados Vetoriais** | 🔌 **Eletrônica Básica** |
+| 🗄️ **Bancos de Dados Vetoriais** | 🔌 **Eletrônica** |
 | 🌐 **Programação Web** | 📡 **Redes** |
 
 ---
