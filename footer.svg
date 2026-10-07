@@ -12,5 +12,5 @@
               M0,60 C200,120 400,0 600,50 C800,100 900,30 1000,60 L1000,140 L0,140 Z"/>
   </path>
   <path fill="url(#g)" d="M0,95 C250,45 450,140 700,95 C850,65 950,105 1000,90 L1000,140 L0,140 Z"/>
-  <text x="500" y="125" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8dc">John Keyrrison  •  IFCE Campus Maranguape</text>
+  <text x="500" y="125" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfd8dc"></text>
 </svg>
