@@ -53,21 +53,19 @@ Integro o **LEIAH (Laboratório de Eletrônica, Informática Aplicada e Humanida
 
 **Como o chatbot funciona:**
 
-```mermaid
-flowchart LR
-    subgraph PREP["Preparação (feita uma vez)"]
-        A["Documentos do campus<br/>PDF, DOCX, HTML"] --> B["Divisão em chunks"]
-        B --> C["Embeddings<br/>Sentence-Transformers"]
-        C --> D[("Base vetorial<br/>FAISS / ChromaDB")]
-    end
-    subgraph USO["Uso (a cada pergunta)"]
-        E["Pergunta do usuário"] --> F["Busca semântica"]
-        F --> G["LLM gratuito<br/>Gemini / Llama 3"]
-        G --> H["Resposta + fontes"]
-    end
-    D -.-> F
-    classDef azul fill:#203a43,stroke:#36BCF7,stroke-width:2px,color:#ffffff
-    class A,B,C,D,E,F,G,H azul
+```text
+PREPARAÇÃO (feita uma vez):
+  Documentos do campus (PDF, DOCX, HTML)
+     → Divisão em trechos (chunks)
+     → Embeddings (Sentence-Transformers)
+     → Base vetorial (FAISS / ChromaDB)
+
+USO (a cada pergunta):
+  Pergunta do usuário
+     → Busca semântica na base vetorial
+     → Trechos mais relevantes
+     → LLM gratuito (Gemini / Llama 3)
+     → Resposta com as fontes
 ```
 
 **Etapas do projeto (set/2026 → ago/2027):**
